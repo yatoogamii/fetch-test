@@ -1,0 +1,13 @@
+html
+  head
+  body
+    h1 Tester Fetch
+    if films
+      a(href='/') Accueil
+    else 
+      a(href='/films') Films
+    ul
+    if films
+      each film in films
+        li #{film.Title}
+
